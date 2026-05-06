@@ -1,0 +1,55 @@
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            
+        }
+        h1:active{/*Ao passar o mouse em cima*/
+            color: aqua;
+        }
+        p:hover{ /*Ao clicar - temporário*/
+            color: blue;
+        }
+        p:visited{ /*Ao clicar - para links - permanente*/
+            color: brown;
+        }
+        textarea:focus{ /*Ao clicar dentro de caixa de texto - temporário*/
+            color: chocolate;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            margin: 30px auto 0;
+            background-color: rgba(0, 255, 255, 0.404);
+            align-items: center;
+            width: 60%;
+            border-radius: 20px;
+        }
+        main {
+            display: flex;
+            margin: 30px;
+            width: 45%;
+            justify-content: space-evenly;
+        }
+        .marrom {
+            background-color: brown;
+        }
+        li:first-child{
+            color: white;
+        }
+        li:last-child{
+            color: rgb(255, 0, 0);
+        }
+        li:nth-child(2){
+            color: rgb(0, 255, 55);
+        }
+        li:in(.marrom){
+            color: rgba(217, 255, 0, 0.479);
+        }
+
+        input:required{
+            background-color: red;
+        }

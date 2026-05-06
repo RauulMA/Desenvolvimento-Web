@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        input[type="radio"]:checked{
+            margin-left: 20px;
+        }
+        input[type="text"]:disabled{
+            background-color: aqua;
+        }
+        option:checked{
+            color: red;
+        }
+        input:required{
+            background-color: red;
+        }
+        input[type="email"]:invalid{
+            background-color: orange;
+        }
+        input[type="email"]:valid{
+            background-color: green;
+        }
+        /* Pseudo-elementos */
+        ::placeholder{
+            color: blue;
+        }
+        
+        .paragrafo::first-line{
+            background-color: yellow;
+            text-transform: uppercase;
+        }
+        .paragrafo::first-letter{
+            background-color: red;
+            text-transform: lowercase;
+        }
+        .paragrafo::selection{
+            background-color: red;
+        }
+        ::marker{
+            color: red;
+            font-size: 24px;
+        }
+
+        </Style>
+</head>
+<body>
+    <input type="radio" name="male" id="">
+    <label for="male">M</label>
+    <input type="radio" name="female" id="">
+    <label for="female">F</label>
+    <br><br>
+
+    <input type="text" name="" id="">
+    <br><br>
+
+    <select name="" id="">
+        <br><br>
+        <option value="volvo">Volvo</option>
+        <option value="bmw" selected>BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br><br>
+
+    <input type="text" required>
+    <br><br>
+
+    <input type="email" required>
+    <br><br>
+    <input type="text" placeholder="Digite seu nome">
+    <br><br>
+    <p class="paragrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic minus incidunt nisi veritatis architecto sit itaque? Pariatur odit commodi accusamus esse vitae, sunt quos adipisci reiciendis minima consectetur, quidem magnam!</p>
+    <br><br>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+</html>
