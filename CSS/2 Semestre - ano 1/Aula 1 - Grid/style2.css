@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(101, 56, 165) 100%);
+}
+
+section#secao1 {
+    grid-area: secao1;
+    background: #1b9150;
+}
+section#secao2 {
+    grid-area: secao2;
+    background: #00ccff;
+}
+section#secao3 {
+    grid-area: secao3;
+    background: #ff5429;
+}
+section#secao4 {
+    grid-area: secao4;
+    background: #07434b;
+}
+section#secao5 {
+    grid-area: secao5;
+    background: #a845a3;
+}
+section#secao6 {
+    grid-area: secao6;
+    background: #1e5728;
+}
+
+#grid {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+    grid-template-columns: 40.5% 40.5% 15%;
+    grid-template-areas: 
+    "secao1 secao2 secao2"
+    "secao1 secao3 secao4"
+    "secao5 secao3 secao6";
+}
+
+#grid>*{
+    padding: 20px;
+    border-radius: 15px;
+    align-content: center;
+}
