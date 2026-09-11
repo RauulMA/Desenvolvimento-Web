@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwidcss - Responsividade e Animação</title>
+</head>
+<body class="m-4">
+    <!-- sm, md, lg, xl, 2xl - tamanhos -->
+     <div class="bg-red-500 md:bg-green-500 lg:bg-blue-500 h-60">Cor muda com tamanho</div>
+
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <!-- div.bg-gray-200.p-4{Item $}*3 -->
+        <div class="bg-gray-500 p-4">Item 1</div>
+        <div class="bg-gray-500 p-4">Item 2</div>
+        <div class="bg-gray-500 p-4">Item 3</div>
+     </div>
+
+     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 mt-4">Hover me</button>
+     <div class="grid grid-cols-4 bg-green-300">
+        <div class="w-16 h-16 bg-purple-500 animate-bounce mt-12"></div>
+        <div class="w-16 h-16 bg-purple-500 animate-spin mt-12"></div>
+        <div class="w-16 h-16 bg-purple-500 animate-pulse mt-12"></div>
+        <div class="w-16 h-16 bg-purple-500 animate-ping mt-12"></div>
+    </div>
+    <div class="max-w-sm mx-auto mt-10 p-6 bg-white rounded-xl shadow-md hover:shadow-xl transform hover:scale-105 transition duration-500 shadow-blue-950"> <!-- O máximo é 950 -->
+        <h2 class="text-xl font-bold text-gray-900">Título do Card</h2>
+        <p class="mt-2 text-gray-600">Esse é um exemplo de card animado e responsivo com Tailwidcss</p>
+    </div>
+    <p>Atividade: Criar uma página simples com cabeçalho, 3 seções responsivas com transformações e um botão animado.</p>
+</body>
+</html>
